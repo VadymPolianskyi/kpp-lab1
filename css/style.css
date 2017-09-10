@@ -1,0 +1,17 @@
+body {
+    background-color: #6f7f76;
+}
+
+#map {
+    height: 600px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.header {
+    text-align: center;
+    color: darkcyan;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: #f4f7f8;
+    border-radius: 4px;
+}
