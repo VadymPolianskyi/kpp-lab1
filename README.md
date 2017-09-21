@@ -1,5 +1,5 @@
 # kpp-lab1
-### Features
+### Steps
 
 - **Created html page and structured project**<br>Created file index.html, created directory /js and /css
 - **Attached map library**<br>Wrote script tag in html to attach google map library for visualizing map
