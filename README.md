@@ -20,6 +20,9 @@
   }
 
   ```
+
+![alt text](https://i.imgur.com/pECIULs.png?2)
+<br>
   
 - **Added request to OpenWeather service**<br>Got list of information about weather and visualized it on map
 
@@ -36,6 +39,10 @@
   icon: "http://openweathermap.org/img/w/" + city.weather[0].icon + ".png"
 ```
 
+
+![alt text](https://i.imgur.com/3CbL8kl.png?1)
+<br>
+
 - **Created inform panel**<br>If you click on weather picture, inform panel will show you information about the weather
 
 ```javascript
@@ -43,6 +50,12 @@
         content: "Temperature: " + info + " C"
     });
  ```
+
+![alt text](https://i.imgur.com/cJwSTcF.png?1)
+
+
+![alt text](https://i.imgur.com/dxYx4Gb.png?1)
+<br>
 
 - **Styled site**<br> Added css styles to html
 
@@ -54,3 +67,6 @@
 }
 ...
 ```
+
+![alt text](https://i.imgur.com/79cS6BB.png?1)
+<br>
