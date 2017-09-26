@@ -87,6 +87,12 @@ San Bernardino
 Los Angeles
 
   ```
+  
+  ![alt text](https://i.imgur.com/a3N7wxz.png?2)
+
+
+  ![alt text](https://i.imgur.com/CFMGYGu.png?1)
+<br>
 
 - **Created JS handler for calculating distance**<br>Created calcRoute method which should calculate the distance between two points and visualize it. If you chose city from list, the program will calculate and visualize the distance
 
@@ -101,7 +107,7 @@ var request = {
 
   ```
 
-
+![alt text](https://i.imgur.com/P9JLIaw.png?1)
 <br>
 
 - **Added distance label to show distance value**<br>Added text tag html for showing distance value after calculation and visualizing
@@ -116,6 +122,6 @@ request to google distance service
   directionsDisplay.setDirections(result);
   ```
 
-
+![alt text](https://i.imgur.com/tpcqASi.png?1)
 <br>
   
