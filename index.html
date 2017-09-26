@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet"  href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
 </head>
 <body>
 
 <div class="header">
-    <h3>Weather Map</h3>
+    <h2>Map</h2>
 </div>
 
 
-<div>
+<!--<div class="container">-->
+<label>
     <strong>Start: </strong>
-    <select id="start" onchange="calcRoute();">
+    <select id="start" onchange="calcRoute();" class="selectpicker">
         <option value="chicago, il">Chicago</option>
         <option value="st louis, mo">St Louis</option>
         <option value="joplin, mo">Joplin, MO</option>
@@ -26,8 +30,8 @@
         <option value="san bernardino, ca">San Bernardino</option>
         <option value="los angeles, ca">Los Angeles</option>
     </select>
-    <strong>End: </strong>
-    <select id="end" onchange="calcRoute();">
+    <text class="text-justify">End: </text>
+    <select class="selectpicker"  id="end" onchange="calcRoute();">
         <option value="chicago, il">Chicago</option>
         <option value="st louis, mo">St Louis</option>
         <option value="joplin, mo">Joplin, MO</option>
@@ -41,17 +45,17 @@
         <option value="san bernardino, ca">San Bernardino</option>
         <option value="los angeles, ca">Los Angeles</option>
     </select>
-</div>
+</label>
+<!--</div>-->
 
 <div id="map"></div>
 
-<script src="js/util/jquery-3.1.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 <script src="js/map.handler.js"></script>
 <script src="js/distance.handler.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?
 key=AIzaSyBPJtLpz0bdOFx1UH6Lyj5HIX7zBUbA0Zg&callback=initMap"></script>
-
-
-<button id="calculate">Calculate</button>
 </body>
 </html>
