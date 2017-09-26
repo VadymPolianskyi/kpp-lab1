@@ -70,3 +70,58 @@
 
 ![alt text](https://i.imgur.com/79cS6BB.png?1)
 <br>
+
+- **Created list of cities for calculating distance**<br>Created list of American cities.
+```text
+Chicago
+St Louis
+Joplin, MO
+Oklahoma City
+Amarillo
+Gallup, NM
+Flagstaff, AZ
+Winona
+Kingman
+Barstow
+San Bernardino
+Los Angeles
+
+  ```
+  
+  ![alt text](https://i.imgur.com/a3N7wxz.png?2)
+
+
+  ![alt text](https://i.imgur.com/CFMGYGu.png?1)
+<br>
+
+- **Created JS handler for calculating distance**<br>Created calcRoute method which should calculate the distance between two points and visualize it. If you chose city from list, the program will calculate and visualize the distance
+
+request to google distance service
+```javascript
+var request = {
+        origin: start,
+        destination: end,
+        travelMode: 'DRIVING',
+        unitSystem: google.maps.UnitSystem.METRIC
+    };
+
+  ```
+
+![alt text](https://i.imgur.com/P9JLIaw.png?1)
+<br>
+
+- **Added distance label to show distance value**<br>Added text tag html for showing distance value after calculation and visualizing
+
+request to google distance service
+```javascript
+  var route = result.routes[0];
+
+  for (var i = 0; i < route.legs.length; i++) {
+      document.querySelector('.distance').textContent = "Distance: " + route.legs[i].distance.text;
+  }
+  directionsDisplay.setDirections(result);
+  ```
+
+![alt text](https://i.imgur.com/tpcqASi.png?1)
+<br>
+  
