@@ -9,10 +9,49 @@
     <h3>Weather Map</h3>
 </div>
 
+
+<div>
+    <strong>Start: </strong>
+    <select id="start" onchange="calcRoute();">
+        <option value="chicago, il">Chicago</option>
+        <option value="st louis, mo">St Louis</option>
+        <option value="joplin, mo">Joplin, MO</option>
+        <option value="oklahoma city, ok">Oklahoma City</option>
+        <option value="amarillo, tx">Amarillo</option>
+        <option value="gallup, nm">Gallup, NM</option>
+        <option value="flagstaff, az">Flagstaff, AZ</option>
+        <option value="winona, az">Winona</option>
+        <option value="kingman, az">Kingman</option>
+        <option value="barstow, ca">Barstow</option>
+        <option value="san bernardino, ca">San Bernardino</option>
+        <option value="los angeles, ca">Los Angeles</option>
+    </select>
+    <strong>End: </strong>
+    <select id="end" onchange="calcRoute();">
+        <option value="chicago, il">Chicago</option>
+        <option value="st louis, mo">St Louis</option>
+        <option value="joplin, mo">Joplin, MO</option>
+        <option value="oklahoma city, ok">Oklahoma City</option>
+        <option value="amarillo, tx">Amarillo</option>
+        <option value="gallup, nm">Gallup, NM</option>
+        <option value="flagstaff, az">Flagstaff, AZ</option>
+        <option value="winona, az">Winona</option>
+        <option value="kingman, az">Kingman</option>
+        <option value="barstow, ca">Barstow</option>
+        <option value="san bernardino, ca">San Bernardino</option>
+        <option value="los angeles, ca">Los Angeles</option>
+    </select>
+</div>
+
 <div id="map"></div>
 
-<script src="js/mapAdding.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPJtLpz0bdOFx1UH6Lyj5HIX7zBUbA0Zg&callback=initMap"></script>
+<script src="js/util/jquery-3.1.1.min.js"></script>
+<script src="js/map.handler.js"></script>
+<script src="js/distance.handler.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?
+key=AIzaSyBPJtLpz0bdOFx1UH6Lyj5HIX7zBUbA0Zg&callback=initMap"></script>
 
+
+<button id="calculate">Calculate</button>
 </body>
 </html>
