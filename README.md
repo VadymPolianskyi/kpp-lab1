@@ -108,13 +108,12 @@ var request = {
 
 request to google distance service
 ```javascript
-            var route = result.routes[0];
+  var route = result.routes[0];
 
-            for (var i = 0; i < route.legs.length; i++) {
-                document.querySelector('.distance').textContent = "Distance: " + route.legs[i].distance.text;
-            }
-            directionsDisplay.setDirections(result);
-
+  for (var i = 0; i < route.legs.length; i++) {
+      document.querySelector('.distance').textContent = "Distance: " + route.legs[i].distance.text;
+  }
+  directionsDisplay.setDirections(result);
   ```
 
 
