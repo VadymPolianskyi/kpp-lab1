@@ -1,7 +1,19 @@
+var directionsDisplay;
+var directionsService;
+var map;
+var haight;
+var oceanBeach;
+
 function initMap() {
+
+    directionsService = new google.maps.DirectionsService();
+    haight = new google.maps.LatLng(37.7699298, -122.4469157);
+    oceanBeach = new google.maps.LatLng(37.7683909618184, -122.51089453697205);
+    directionsDisplay = new google.maps.DirectionsRenderer();
+
     var position = {lat: 49.2325, lng:  28.4711111111};
 
-    var map = new google.maps.Map(document.getElementById('map'), {
+    map = new google.maps.Map(document.getElementById('map'), {
         zoom: 4,
         center: position
     });
@@ -23,6 +35,14 @@ function initMap() {
                             lat: city.coord.lat,
                             lng: city.coord.lon,
                         },
+                        origin: 'Hoboken NJ',
+                        destination: 'Carroll Gardens, Brooklyn',
+                        travelMode: 'TRANSIT',
+                        transitOptions: {
+                            departureTime: new Date(1337675679473),
+                            modes: ['BUS'],
+                            routingPreference: 'FEWER_TRANSFERS'
+                        },
                         map: map,
                         zoom: 1000,
                         title: data.list[i].name,
@@ -33,6 +53,7 @@ function initMap() {
                 }
             });
         });
+    directionsDisplay.setMap(map);
 }
 
 function attachInfo(marker, info) {
@@ -44,3 +65,6 @@ function attachInfo(marker, info) {
         infowindow.open(marker.get('map'), marker);
     });
 }
+
+
+
