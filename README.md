@@ -112,7 +112,6 @@ var request = {
 
 - **Added distance label to show distance value**<br>Added text tag html for showing distance value after calculation and visualizing
 
-request to google distance service
 ```javascript
   var route = result.routes[0];
 
